@@ -1,26 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Swim Tutorials</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <header>
-    <h1>Swim Tutorials</h1>
-  </header>
-  <nav>
-    <a href="./index.html">Home</a>
-    <a href="./tutorial.html">Swim Tutorials</a>
-    <a href="./history.html">History</a>
-  </nav>
+  <head>
+      <meta charset="UTF-8">
+      <title>Swim Tutorials</title>
+      <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div id="header"></div>
   <main>
     <h2>1. Breaststroke: “The Frog Kick”</h2>
     <p>Body flat, scoop arms, frog kick, breathe when arms scoop.</p>
-<p>
-  <a href="https://www.youtube.com/watch?v=EElzlIMjk_c" target="_blank">Breaststroke Tutorial</a>
-</p>
-
+    <p>
+      <a href="https://www.youtube.com/watch?v=EElzlIMjk_c" target="_blank">Breaststroke Tutorial</a>
+    </p>
     <h2>2. Freestyle: “Front Crawl”</h2>
     <p>Reach one arm, kick from hips, breathe side every few strokes.</p>
     <p>
@@ -44,8 +36,20 @@
       <li>The more you practice, the better you'll float, kick, and glide!</li>
     </ul>
   </main>
-  <footer>
-    <p>© 2025 Woodruff Swimming</p>
-  </footer>
-</body>
+      <div id="footer"></div>
+      <script>
+          document.addEventListener("DOMContentLoaded", function () {
+            fetch('header.html')
+              .then(response => response.text())
+              .then(data => {
+                document.getElementById("header").innerHTML = data;
+              });
+            fetch('footer.html')
+              .then(response => response.text())
+              .then(data => {
+                document.getElementById("footer").innerHTML = data;
+              });
+          });
+      </script>
+    </body>
 </html>

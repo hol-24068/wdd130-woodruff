@@ -20,7 +20,15 @@ header {
   text-align: center;
   font-family: 'Noto Serif', serif;
 }
-
+.logo-img {
+  height: 80px;
+  width: auto;
+  display: block;
+  margin: 0.5rem auto;
+}
+.logo {
+  text-align: center;
+}
 nav {
   background-color: var(--secondary);
   display: flex;
@@ -38,10 +46,53 @@ nav a {
 main {
   padding: 2rem;
 }
-
-footer {
-  text-align: center;
-  padding: 1rem;
-  background-color: var(--primary);
-  color: white;
+/* Woodruff Footer Styles */
+.woodruff-footer {
+  background-color: #b19493;
+  color: black;
+  padding: 2em;
+  margin: 3em auto;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  max-width: 1000px;
+  width: 90%;
+  text-align: left;
+  font-family: 'Lato', sans-serif;
 }
+
+.footer-info {
+  flex: 1 1 60%;
+  text-align: left;
+}
+
+.footer-info p {
+  margin: 0.5em 0;
+  line-height: 1.4;
+}
+
+.footer-info a {
+  color: black
+  text-decoration: none;
+  margin: 0 0.5em;
+  font-weight: bold;
+}
+
+.footer-info a:hover {
+  text-decoration: underline;
+  color: #333;
+}
+
+.footer-social {
+  flex: 1 1 30%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1em;
+  flex-wrap: wrap;
+}
+
+.footer-social img {
+  width: 30px;
+  height: 30px;
+  border-radius: 6px;
+  transi
